@@ -29,5 +29,9 @@ describe RomanNumerals do
 		expect(RomanNumerals.convert(256)).to eq "CCLVI"
 	end
 
+	it 'should be able to convert 3999 to MMMCMXCIX' do
+		expect(RomanNumerals.convert(3999)).to eq "MMMCMXCIX"
+	end
+
 
 end
