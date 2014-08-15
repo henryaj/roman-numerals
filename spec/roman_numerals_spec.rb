@@ -26,6 +26,10 @@ describe RomanNumerals do
 		expect(RomanNumerals.convert(76)).to eq("LXXVI")
 	end
 
+	it "should convert 499 to CDXCIX" do
+		expect(RomanNumerals.convert(499)).to eq("CDXCIX")
+	end
+
 
 	
 end
