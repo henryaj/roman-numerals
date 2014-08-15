@@ -15,7 +15,7 @@ class RomanNumerals
 		[1, "I"]
 	]
 
-	def self.convert(number)
+	def self.romanise(number)
 		raise if number > 4999
 		raise if number < 1
 		a = ""
@@ -23,6 +23,10 @@ class RomanNumerals
 			(number / pair[0]).times { a << pair[1]; number -= pair[0] }
 		end
 		a
+	end
+
+	def self.arabise(number)
+		1
 	end
 
 
