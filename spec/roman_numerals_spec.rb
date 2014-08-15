@@ -14,5 +14,14 @@ describe RomanNumerals do
 		expect(RomanNumerals.convert(10)).to eq("X")
 	end
 
+	it "should convert 15 to XV" do
+		expect(RomanNumerals.convert(15)).to eq("XV")
+	end
+
+	it "should convert 20 to XX" do
+		expect(RomanNumerals.convert(20)).to eq("XX")
+	end
+
+
 	
 end
