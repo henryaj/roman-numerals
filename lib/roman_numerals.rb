@@ -1,6 +1,7 @@
 class RomanNumerals
 
 	def self.convert(number) # here, we're calling a class method on self - which instantiates a RomanNumerals
+		return "X" if number == 10
 		return "V" if number == 5
 		"I"
 	end
