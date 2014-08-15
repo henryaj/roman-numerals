@@ -5,8 +5,16 @@ describe RomanNumerals do
 		expect(RomanNumerals.convert(1)).to eq "I"
 	end
 
+	it 'should be able to convert 4 to IV' do
+		expect(RomanNumerals.convert(4)).to eq "IV"
+	end
+
 	it 'should be able to convert 5 to V' do
 		expect(RomanNumerals.convert(5)).to eq "V"
+	end
+
+	it 'should be able to convert 9 to IX' do
+		expect(RomanNumerals.convert(9)).to eq "IX"
 	end
 
 	it 'should be able to convert 10 to X' do
@@ -20,4 +28,6 @@ describe RomanNumerals do
 	it 'should be able to convert 256 to CCLVI' do
 		expect(RomanNumerals.convert(256)).to eq "CCLVI"
 	end
+
+
 end
