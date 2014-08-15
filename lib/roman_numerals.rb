@@ -16,6 +16,8 @@ class RomanNumerals
 	]
 
 	def self.convert(number)
+		raise if number > 4999
+		raise if number < 1
 		a = ""
 		ROMAN_NUMERALS.each do |pair|
 			(number / pair[0]).times { a << pair[1]; number -= pair[0] }
