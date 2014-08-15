@@ -22,6 +22,10 @@ describe RomanNumerals do
 		expect(RomanNumerals.convert(20)).to eq("XX")
 	end
 
+	it "should convert 76 to LXXVI" do
+		expect(RomanNumerals.convert(76)).to eq("LXXVI")
+	end
+
 
 	
 end
