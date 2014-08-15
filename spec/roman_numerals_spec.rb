@@ -16,4 +16,8 @@ describe RomanNumerals do
 	it 'should be able to convert 25 to XXV' do
 		expect(RomanNumerals.convert(25)).to eq "XXV"
 	end
+
+	it 'should be able to convert 256 to CCLVI' do
+		expect(RomanNumerals.convert(256)).to eq "CCLVI"
+	end
 end
