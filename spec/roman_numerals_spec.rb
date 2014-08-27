@@ -45,16 +45,5 @@ describe RomanNumerals do
 		end
 
 	end
-
-	context "roman to arabic converter" do
-
-		it "should convert I to 1" do
-			expect(RomanNumerals.arabise("I")).to eq(1)
-		end
-
-		xit "should convert V to 5" do
-		end
-
-	end
 	
 end
