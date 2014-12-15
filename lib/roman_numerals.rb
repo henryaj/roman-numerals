@@ -22,11 +22,12 @@ class RomanNumerals
 		ROMAN_NUMERALS.each do |pair|
 			(number / pair[0]).times { result << pair[1]; number -= pair[0] }
 		end
-		puts result
+		result
 	end
+
+
 
 end
 
-###
 
-RomanNumerals.convert(486)
+
