@@ -15,19 +15,18 @@ class RomanNumerals
 		[1, "I"]
 	]
 
-	def self.romanise(number)
+	def self.convert(number)
 		raise if number > 4999
 		raise if number < 1
-		a = ""
+		result = ""
 		ROMAN_NUMERALS.each do |pair|
-			(number / pair[0]).times { a << pair[1]; number -= pair[0] }
+			(number / pair[0]).times { result << pair[1]; number -= pair[0] }
 		end
-		a
+		puts result
 	end
-
-	def self.arabise(number)
-		1
-	end
-
 
 end
+
+###
+
+RomanNumerals.convert(486)
